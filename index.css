@@ -1,0 +1,85 @@
+body {
+    background-color: #576574;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center {
+    position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 200px;
+    margin-bottom: 50px;
+}
+
+input {
+    background: none;
+    font-size: 30px;
+    border: 0;
+    border-bottom: 2px solid white;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.name__input:focus,
+.name__input:active {
+    outline: none;
+}
+
+.name__input {
+    font: 50px;
+    margin-bottom: 30px;
+    caret-color: white;
+    margin-bottom: 50px;
+}
+
+.js-add-to-do {
+    font-size: 25px;
+}
+
+.js-add-to-do:focus,
+.js-add-to-do:active {
+    outline: none;
+    caret-color: white;
+}
+
+.toDo__button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
